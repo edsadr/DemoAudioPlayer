@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>		
+		<title>MedellinJS</title>
+		<link rel="stylesheet" href="themes/medellinjs.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.min.css" />
+		<script type="text/javascript" src="cordova-2.3.0.js"></script>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.mobile-1.2.0.min.js"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		 <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    Audio Player
+                </h3>
+            </div>
+            <div data-role="content">
+            	<div style="text-align:center;">
+            		<img src="images/inquisition.jpg" style="width: 80%;"/>
+            	</div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu1">
+                        Seleccione el audio
+                    </label>
+                    <select name="music" id="music">
+                        <option value="fade.mp3">
+                            Fade to black
+                        </option>
+                        <option value="toreador.mp3">
+                            Toreador
+                        </option>
+                        <option value="one.mp3">
+                            One
+                        </option>
+                    </select>
+                </div>
+                <div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+	                <a data-role="button" href="#" id="play">
+	                    Reproducir
+	                </a>
+	                <a data-role="button" href="#" id="pause">
+	                    Pausar
+	                </a>	                
+	            </div>
+	            <a data-role="button" href="#" id="stop">
+	                    Parar
+	                </a>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h3>
+                    MedellinJS 2013
+                </h3>
+            </div>
+        </div>
+	</body>
+</html>
